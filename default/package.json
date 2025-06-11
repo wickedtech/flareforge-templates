@@ -16,9 +16,8 @@
       "autoprefixer": {}
     }
   },
-  "dependencies": { },
+  "dependencies": {},
   "devDependencies": {
-    "@flareforge/dev": "^0.0.2",
-    "@react-router/dev": "^7.6.0"
+    "@flareforge/dev": "*"
   }
 }

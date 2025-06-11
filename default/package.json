@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "flareforge dev",
+    "build": "flareforge build",
+    "db:drop": "drizzle-kit drop",
+    "db:generate": "drizzle-kit generate",
+    "db:apply": "wrangler d1 migrations apply DB --local",
+    "db:apply-prod": "wrangler d1 migrations apply DB --remote",
+    "stripe:listen": "stripe listen --forward-to localhost:5173/webhook/stripe"
+  },
+  "postcss": {
+    "plugins": {
+      "@tailwindcss/postcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "dependencies": { },
+  "devDependencies": {
+    "@flareforge/dev": "^0.0.2",
+    "@react-router/dev": "^7.6.0"
+  }
+}

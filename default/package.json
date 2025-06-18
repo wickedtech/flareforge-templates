@@ -2,6 +2,9 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "lint": "eslint .",
+    "lint:prettier": "prettier -c . --cache",
+    "check-types": "tsc --noEmit --project tsconfig.lint.json",
     "dev": "flareforge dev",
     "build": "flareforge build",
     "db:drop": "drizzle-kit drop",

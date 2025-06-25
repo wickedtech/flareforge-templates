@@ -1,2 +1,2 @@
-import config from "@flareforge/dev/config/drizzle";
+import config from "@flareforge/dev/configs/drizzle";
 export default { ...config };

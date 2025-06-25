@@ -1,2 +1,2 @@
-import config from "@flareforge/dev/config/eslint";
+import config from "@flareforge/dev/configs/eslint";
 export default [...config];

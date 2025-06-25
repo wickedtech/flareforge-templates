@@ -1,5 +1,5 @@
 import type { Config } from "@react-router/dev/config";
-import flareforge from "@flareforge/dev/config/react-router"
+import flareforge from "@flareforge/dev/configs/react-router"
 
 export default {
   ...flareforge,

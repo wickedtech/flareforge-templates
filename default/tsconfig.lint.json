@@ -1,25 +1,6 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@flareforge/dev/tsconfigs/lint",
   "compilerOptions": {
-    "esModuleInterop": false,
-    "skipLibCheck": true,
-    "target": "ES2022",
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "module": "Preserve",
-    "noEmit": true,
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "jsx": "react-jsx",
-    "types": [
-      "@types/node",
-      "@cloudflare/workers-types/experimental",
-      "vite/client"
-    ],
     "paths": {
       "@locales/*": ["./locales/*"],
       "@/workers": ["./workers/index"],
@@ -29,9 +10,9 @@
     "rootDirs": [".", "./.react-router/types"]
   },
   "include": [
+    ".flareforge/i18next.d.ts",
     "app/**/*",
     "workers/**/*",
-    ".flareforge/i18next.d.ts",
     "worker-configuration.d.ts"
   ]
 }
